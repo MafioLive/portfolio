@@ -10,6 +10,7 @@ export const Skills: NextPage<ISKillsProps> = ({ skills }) => {
   const languages = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "languages");
   const frontend = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "frontend");
   const headlessCms = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "headless cms");
+  const other = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "other");
   const testing_tools = skills?.filter(
     skill =>
       skill?.fieldType?.toLowerCase() === "testing" || skill?.fieldType?.toLowerCase() === "tools"
@@ -24,6 +25,7 @@ export const Skills: NextPage<ISKillsProps> = ({ skills }) => {
         <Skill skills={frontend} skill="Frontend" />
         <Skill skills={headlessCms} skill="Headless CMS" />
         <Skill skills={testing_tools} skill="Testing &amp; Tools" />
+        <Skill skills={other} skill="Other" />
         <Skill skills={familiar} skill="Familiar" />
       </div>
     </>

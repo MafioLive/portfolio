@@ -6,7 +6,7 @@ export const graphcms = new GraphQLClient(
 
 export const QUERY = gql`
   {
-    skills(orderBy: uniqueId_ASC) {
+    skills(orderBy: uniqueId_ASC, first:100) {
       uniqueId
       skill
       id

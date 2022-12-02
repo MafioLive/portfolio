@@ -7,7 +7,9 @@
   z-index: 100;
   font-weight: 700;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  opacity: 0.98;
+  background: linear-gradient(#2e2e2e, #000000);
   border-bottom: 2px solid var(--border-one);
 
   &_name {
