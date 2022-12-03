@@ -6,6 +6,7 @@ interface ISKillsProps {
   skills: ISkills[];
 }
 
+
 export const Skills: NextPage<ISKillsProps> = ({ skills }) => {
   const languages = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "languages");
   const frontend = skills?.filter(skill => skill?.fieldType?.toLowerCase() === "frontend");
@@ -20,13 +21,13 @@ export const Skills: NextPage<ISKillsProps> = ({ skills }) => {
   return (
     <>
       <h1 className="skills_heading">Skills</h1>
+      <h2 className="skills_learning">Skills with a <strong>*</strong> are skills that I am familiar with.</h2>
       <div className="skills_box">
         <Skill skills={languages} skill="Languages" />
         <Skill skills={frontend} skill="Frontend" />
         <Skill skills={headlessCms} skill="Headless CMS" />
         <Skill skills={testing_tools} skill="Testing &amp; Tools" />
         <Skill skills={other} skill="Other" />
-        <Skill skills={familiar} skill="Familiar" />
       </div>
     </>
   );

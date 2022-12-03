@@ -138,7 +138,7 @@ const Home: NextPage<IHomeProps> = ({ skills }) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { skills} = await graphcms.request(QUERY);
+  const {skills} = await graphcms.request(QUERY);
 
   return {
     props: {

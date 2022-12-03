@@ -5,6 +5,10 @@
     @include headingLayout(42px, center, 50px, var(--main-text-color));
   }
 
+  &_learning {
+    @include headingLayout(21px, center, 10px, var(--main-text-color));
+  }
+
   &_box {
     @include flexSettings(column, center, center);
     flex-wrap: wrap;

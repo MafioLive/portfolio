@@ -9,11 +9,11 @@ export interface IText {
 export interface ISkills {
   id: string;
   uniqueId: number;
-  proficient: boolean;
   skill: string;
   url: string;
   fieldType: string | null;
   image: IUrl;
+  proficient: boolean;
 }
 
 export interface IJobs {
