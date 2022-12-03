@@ -15,7 +15,7 @@ export const Skill: NextPage<ISkillProps> = ({ skills, skill }) => {
           <div
             key={skill?.id}
             className="skills_box_container_row_card"
-            onClick={() => window.open(skill?.url, "_blank")}
+            onClick={() => window.location.href=skill?.url}
           >
             <img src={skill?.image?.url} alt="" />
             <p>{skill?.skill}</p>
