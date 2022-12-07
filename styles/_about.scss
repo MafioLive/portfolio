@@ -28,7 +28,7 @@
       }
     }
 
-    &_starme {
+    &_followme {
       @include sectionLayout(10px 6px, #001c55);
       @include borderWithRadius(1px solid #001c55, 6px);
       margin-top: 30px;
@@ -38,7 +38,6 @@
       cursor: pointer;
     }
   }
-
   &_right {
     flex: 0 0;
 
